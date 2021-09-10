@@ -23,7 +23,7 @@ myFunction<-function(roads, car, packages){
   }
   
   
-  #apply A* algorithm for the shortest path for car to go to destination; frontier=openlist expanded=expanded
+  #apply A* algorithm for the shortest path for car to go to destination; frontier=openlist expanded=closelist
   
   end=list(x=packages[togo,1+offset],y=packages[togo,2+offset])#choose destination
   start=list(x=car$x,y=car$y,g=0)
